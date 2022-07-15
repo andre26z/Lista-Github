@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #030518;
+	color: white;
+	word-break: break-all;
+}
+main {
+	li {
+		display: flex;
+		flex-direction: column;
+		margin: 20px auto;
+		border: white 2px solid;
+		background-color: white;
+		color: #030518;
+		border-radius: 5px;
+
+		strong {
+			font-size: 1.2em;
+			padding: 7px;
+		}
+	}
+
+	li span {
+		margin: 10px;
+	}
+
+	h1 {
+		margin: 20px auto;
+	}
+	input {
+		padding: 7px;
+	}
+	button {
+		margin: 20px auto;
+		padding: 7px;
+	}
+}
