@@ -2,7 +2,6 @@
 const ul = document.querySelector("ul");
 const h2 = document.querySelector("h2");
 const botaopesquisa = document.querySelector("#botaopesquisa");
-const ordemalfabeto = document.querySelector("#ordemalfabeto");
 const ordemdata = document.querySelector("#ordemdata");
 const pesquisa = document.querySelector("#boxpesquisa");
 
@@ -35,6 +34,12 @@ async function busca() {
 }
 
 function mostrartodos() {
+	function ordernardata() {
+		let ordemdata = data.sort(
+			(obja, objb) => Number(obja.created_at) - Number(objb.created_at)
+		);
+		console.log(ordemdata);
+	}
 	h2.innerHTML = "";
 	fetch("https://api.github.com/users/andre26z/repos")
 		.then(async (res) => {
@@ -42,7 +47,7 @@ function mostrartodos() {
 				throw new Error(res.status);
 			}
 
-			var data = await res.json();
+			let data = await res.json();
 
 			data.map((item) => {
 				let li = document.createElement("li");
