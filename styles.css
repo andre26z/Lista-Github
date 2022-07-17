@@ -51,10 +51,13 @@ main h1 {
 
 main input {
   padding: 7px;
+  color: black;
 }
 
 main button {
   margin: 20px auto;
   padding: 7px;
+  background-color: white;
+  color: black;
 }
 /*# sourceMappingURL=styles.css.map */

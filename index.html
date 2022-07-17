@@ -6,23 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Github</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles.scss">
 </head>
 
 <body>
-    <main>
+    <main class="container">
         <h1>Meu Github - andre26z</h1>
 
         <input id="boxpesquisa" type="text" placeholder="Buscar repositório por nome">
 
         <button type="button" id="botaopesquisa" onclick="busca()">Buscar</button>
 
-        <button onclick=ordenaralfabeto() id="ordemalfabeto">Ordenar por ordem alfabética</button>
 
-        <button onclick=ordenardata() id="ordemdata">Ordenar por data </button>
+        <button onclick=ordenardata() id="ordemdata">Mostrar repositórios em ordem de criação </button>
 
-        <button onclick="mostrartodos()" id="mostrartodos"> Mostrar todos os repositórios</button>
+        <button onclick="ordemalfabetica()" id="mostrartodos"> Mostrar Repositórios em ordem alfabética </button>
+
+        <button onclick="arquivados()" id="mostrararquivados"> Mostrar Repositórios arquivados </button>
 
         <hr />
         <h2></h2>
