@@ -112,34 +112,4 @@ function ordemalfabetica(e) {
 		.catch((e) => console.log(e));
 }
 
-function arquivados (e){
-h2.innerHTML = "";
-	ul.innerHTML = "";
-	li.innerHTML = "";
-	fetch("https://api.github.com/users/andre26z/repos")
-		.then(async (res) => {
-			if (!res.ok) {
-				throw new Error(res.status);
-			}
-
-			let data = await res.json();
-
-			data.map((item) => {
-				let li = document.createElement("li");
-				let novadata = new Date(item.created_at);
-				let datacorreta = defaultdata.format(novadata);
-
-				li.innerHTML = `
-        <strong>${item.name.toUpperCase()}</strong>
-        <span>URL: ${item.url}</span>
-        <span> Data Criação:
-          ${datacorreta}
-					 </span>
-
-      `;
-				ul.appendChild(li);
-			});
-		})
-		.catch((e) => console.log(e));
-}
 
