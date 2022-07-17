@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Github</title>
+    <title>Meu Repositórios Github</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles.scss">
 </head>
 
 <body>
     <main class="container">
-        <h1>Meu Github - andre26z</h1>
+        <h1>Meus Repositórios Github - @andre26z</h1>
 
         <input id="boxpesquisa" type="text" placeholder="Buscar repositório por nome">
 
@@ -24,7 +27,11 @@
 
         <button onclick="ordemalfabetica()" id="mostrartodos"> Mostrar Repositórios em ordem alfabética </button>
 
-        <button onclick="arquivados()" id="mostrararquivados"> Mostrar Repositórios arquivados </button>
+        <button onclick="tempage()" id="tempage"> Mostrar apenas repositórios que possuem página </button>
+
+        <button onclick="javascript()" id="usamjavascript"> Mostrar projetos que usam JavaScript </button>
+
+        <button onclick="vue()" id="usamvue"> Mostrar projetos que usam Vue </button>
 
         <hr />
         <h2></h2>
